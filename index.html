@@ -5,48 +5,86 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>aaaLearnChineseHappily - Official Site</title>
     <style>
+        /* 淡蓝色主题配色 */
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-family: 'Segoe UI', Arial, sans-serif;
             line-height: 1.6;
-            color: #333;
+            color: #2c3e50;
             max-width: 800px;
             margin: 0 auto;
             padding: 20px;
-            background-color: #f9f9f9;
+            background-color: #f0f8ff; /* 极淡的爱丽丝蓝背景 */
         }
         header {
             text-align: center;
-            padding: 40px 0;
-            background: linear-gradient(135deg, #ff4b2b, #ff416c);
+            padding: 50px 20px;
+            background: linear-gradient(135deg, #87CEEB, #00BFFF); /* 天蓝色渐变 */
             color: white;
-            border-radius: 10px;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
             margin-bottom: 30px;
         }
         .container {
             background: white;
-            padding: 30px;
-            border-radius: 10px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            padding: 35px;
+            border-radius: 15px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.05);
         }
-        h1 { margin: 0; font-size: 2.5em; }
-        h2 { color: #ff416c; border-bottom: 2px solid #eee; padding-bottom: 10px; }
+        h1 { margin: 0; font-size: 2.2em; letter-spacing: 1px; }
+        h2 { color: #009ACD; border-bottom: 2px solid #e1f5fe; padding-bottom: 10px; margin-top: 30px; }
+        
+        /* 介绍部分 */
+        .intro {
+            font-size: 1.1em;
+            color: #4682B4;
+            font-style: italic;
+            margin-bottom: 25px;
+        }
+
+        /* 如何使用部分 */
         .how-to {
-            background-color: #fff5f5;
-            padding: 20px;
-            border-left: 5px solid #ff416c;
+            background-color: #e3f2fd; /* 淡蓝色背景块 */
+            padding: 25px;
+            border-radius: 10px;
+            border-left: 6px solid #00BFFF;
             margin: 20px 0;
         }
+        .how-to p { margin: 10px 0; font-weight: 500; }
+
+        /* 链接样式 */
+        .links-section {
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #eee;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+        .btn-link {
+            text-decoration: none;
+            color: #00BFFF;
+            padding: 10px 20px;
+            border: 2px solid #00BFFF;
+            border-radius: 25px;
+            transition: all 0.3s ease;
+            font-weight: bold;
+        }
+        .btn-link:hover {
+            background-color: #00BFFF;
+            color: white;
+        }
+
         footer {
             text-align: center;
-            margin-top: 40px;
+            margin-top: 50px;
             font-size: 0.9em;
-            color: #777;
+            color: #95a5a6;
         }
-        .app-ads-link {
-            display: inline-block;
+        .signature {
+            color: #5dade2;
+            font-weight: bold;
             margin-top: 10px;
-            color: #ff416c;
-            text-decoration: none;
         }
     </style>
 </head>
@@ -54,33 +92,34 @@
 
 <header>
     <h1>aaaLearnChineseHappily</h1>
-    <p>Master Chinese in Your Daily Flow</p>
+    <p>Natural Context Learning Experience</p>
 </header>
 
 <div class="container">
-    <h2>Welcome to Natural Learning</h2>
-    <p>
-        Studies show that introducing foreign words into a native language context helps learners grasp meanings faster and apply them accurately in different situations. 
-        <b>aaaLearnChineseHappily</b> is designed to integrate learning into your everyday life seamlessly.
+    <p class="intro">
+        "Studies show that introducing foreign words into a native language context helps learners grasp meanings faster and apply them accurately in different situations."
     </p>
 
     <h2>How to Use</h2>
     <div class="how-to">
-        <p>1. Open the app and click <b>"Start"</b>.</p>
-        <p>2. Return to your favorite apps—whether you're reading novels, scrolling through comics, or watching videos.</p>
-        <p>3. Occasionally, some English words will appear in Chinese, making your learning process natural, intuitive, and fun!</p>
+        <p>✨ Click <b>"Start"</b> in the app.</p>
+        <p>📖 Return to your usual apps—reading novels, comics, or watching videos.</p>
+        <p>🎯 Occasionally, some English words will appear in Chinese, making learning natural and fun.</p>
     </div>
 
-    <h2>About the Methodology</h2>
-    <p>
-        By replacing words within familiar contexts, your brain builds stronger neural connections without the stress of rote memorization. It’s not just an app; it’s a new way to experience language.
-    </p>
+    <h2>Developer Documents</h2>
+    <div class="links-section">
+        <!-- 隐私政策链接 -->
+        <a href="https://sites.google.com/d/1LuPUed7L6opkbeUpUSkDPvHsWvIRjujR/p/1IRq66kLrWFaBMZ8ZbZvz1M0glDMeWIQv/edit" class="btn-link" target="_blank">Privacy Policy</a>
+        
+        <!-- app-ads.txt 链接 -->
+        <a href="app-ads.txt" class="btn-link">app-ads.txt</a>
+    </div>
 </div>
 
 <footer>
-    <p>By A Solo Heart, A Single Focus, A-grade APK.</p>
     <p>&copy; 2024 kdkjTech. All rights reserved.</p>
-    <a href="app-ads.txt" class="app-ads-link">Authorized Sellers (app-ads.txt)</a>
+    <p class="signature">By A Solo Heart, A Single Focus, A-grade APK.</p>
 </footer>
 
 </body>
